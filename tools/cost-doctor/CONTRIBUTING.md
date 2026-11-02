@@ -34,7 +34,7 @@ existing JSON keys. Add fields instead.
 
 Short imperative subjects, for example:
 
-```
+```text
 feat: add idle NAT gateway rule
 fix: skip utilization rules when metrics are missing
 docs: clarify savings estimate assumptions

@@ -116,8 +116,8 @@ docs/
 
 ## 相关项目
 
-- [kudig-io/aws-outbound-playbook](../../playbook) — AWS 出海实战手册
-- [kudig-io/aws-cost-doctor](../../tools/cost-doctor) — AWS 成本与闲置资源扫描器
+- [Playbook](../../playbook) — AWS 出海实战手册
+- [Cost Doctor](../../tools/cost-doctor) — AWS 成本与闲置资源扫描器
 - [kudig-io/klaw](https://github.com/kudig-io/klaw) — Kubernetes 诊断与运维平台
 
 ## 参与贡献

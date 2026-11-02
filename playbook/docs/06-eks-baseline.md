@@ -2,7 +2,7 @@
 
 A production EKS cluster is mostly a set of defaults. This chapter lists the defaults worth deciding
 before the first workload lands. For runnable Terraform, see
-[kudig-io/eks-production-blueprint](https://github.com/kudig-io/eks-production-blueprint).
+[EKS production blueprint](../../infrastructure/eks-blueprint).
 
 ## Cluster mode
 

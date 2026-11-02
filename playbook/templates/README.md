@@ -18,4 +18,4 @@ a Terraform registry product. Review, adapt, and test them in a non-production a
 - Add a cost note for anything that creates billable resources.
 
 For a fuller EKS implementation, see
-[kudig-io/eks-production-blueprint](https://github.com/kudig-io/eks-production-blueprint).
+[EKS production blueprint](../../infrastructure/eks-blueprint).

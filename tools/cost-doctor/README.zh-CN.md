@@ -109,8 +109,8 @@ aws-cost-doctor scan --input inventory.json --fail-on high   # CI 门禁
 
 ## 相关项目
 
-- [kudig-io/aws-outbound-playbook](../../playbook) — AWS 出海实战手册
-- [kudig-io/eks-production-blueprint](../../infrastructure/eks-blueprint) — 生产级 EKS 基线
+- [Playbook](../../playbook) — AWS 出海实战手册
+- [EKS 基线](../../infrastructure/eks-blueprint) — 生产级 EKS 基线
 
 ## 声明
 

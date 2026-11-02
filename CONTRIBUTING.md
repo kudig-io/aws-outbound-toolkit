@@ -32,7 +32,7 @@ Markdown is checked in CI with markdownlint and lychee. Keep relative links vali
 
 Short imperative subjects, for example:
 
-```
+```text
 docs: add multi-region failover checklist
 feat(cost-doctor): add idle NAT gateway rule
 fix(eks-blueprint): correct subnet tagging for internal ELB

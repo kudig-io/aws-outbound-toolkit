@@ -51,8 +51,8 @@ They are starting points, not certified modules — review them before productio
 
 ## Related projects
 
-- [kudig-io/eks-production-blueprint](../infrastructure/eks-blueprint) — production EKS baseline
-- [kudig-io/aws-cost-doctor](../tools/cost-doctor) — AWS cost and idle-resource scanner
+- [EKS production blueprint](../infrastructure/eks-blueprint) — production EKS baseline
+- [Cost Doctor](../tools/cost-doctor) — AWS cost and idle-resource scanner
 - [kudig-io/kudig-database](https://github.com/kudig-io/kudig-database) — Kubernetes + AI infrastructure knowledge base
 
 ## Contributing

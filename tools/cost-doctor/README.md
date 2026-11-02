@@ -111,8 +111,8 @@ for existing formats. See [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## Related projects
 
-- [kudig-io/aws-outbound-playbook](../../playbook) — AWS 出海实战手册
-- [kudig-io/eks-production-blueprint](../../infrastructure/eks-blueprint) — production EKS baseline
+- [Playbook](../../playbook) — AWS 出海实战手册
+- [EKS blueprint](../../infrastructure/eks-blueprint) — production EKS baseline
 
 ## Disclaimer
 

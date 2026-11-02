@@ -32,7 +32,7 @@ so it needs network access.
 
 Short imperative subjects, for example:
 
-```
+```text
 feat: add Karpenter IRSA module
 fix: correct subnet tagging for internal ELB
 docs: clarify private endpoint access

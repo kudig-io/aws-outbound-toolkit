@@ -119,8 +119,8 @@ These depend on your platform and compliance requirements. The Helm values under
 
 ## Related projects
 
-- [kudig-io/aws-outbound-playbook](../../playbook) — AWS 出海实战手册
-- [kudig-io/aws-cost-doctor](../../tools/cost-doctor) — AWS cost and idle-resource scanner
+- [Playbook](../../playbook) — AWS 出海实战手册
+- [Cost Doctor](../../tools/cost-doctor) — AWS cost and idle-resource scanner
 - [kudig-io/klaw](https://github.com/kudig-io/klaw) — Kubernetes diagnostics and operations platform
 
 ## Contributing

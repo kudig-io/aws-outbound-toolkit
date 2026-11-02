@@ -47,8 +47,8 @@ Checklist 结尾。
 
 ## 相关项目
 
-- [kudig-io/eks-production-blueprint](../infrastructure/eks-blueprint) — 生产级 EKS 基线
-- [kudig-io/aws-cost-doctor](../tools/cost-doctor) — AWS 成本与闲置资源扫描器
+- [EKS 生产基线](../infrastructure/eks-blueprint) — 生产级 EKS 基线
+- [Cost Doctor](../tools/cost-doctor) — AWS 成本与闲置资源扫描器
 - [kudig-io/kudig-database](https://github.com/kudig-io/kudig-database) — Kubernetes + AI 基础设施知识库
 
 ## 参与贡献

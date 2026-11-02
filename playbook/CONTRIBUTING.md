@@ -35,7 +35,7 @@ Thanks for helping improve the playbook.
 
 Use a short imperative subject, for example:
 
-```
+```text
 docs: add multi-region failover checklist
 fix: correct VPC endpoint cost note
 ```
