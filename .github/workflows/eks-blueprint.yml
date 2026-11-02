@@ -1,0 +1,39 @@
+name: EKS blueprint CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "infrastructure/eks-blueprint/**"
+      - ".github/workflows/eks-blueprint.yml"
+  pull_request:
+    paths:
+      - "infrastructure/eks-blueprint/**"
+      - ".github/workflows/eks-blueprint.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  terraform:
+    name: Terraform fmt and validate
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: infrastructure/eks-blueprint/terraform
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: "1.9.8"
+
+      - name: Check formatting
+        run: terraform fmt -check -recursive
+
+      - name: Init (no backend)
+        run: terraform init -backend=false
+
+      - name: Validate
+        run: terraform validate -no-color

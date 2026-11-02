@@ -1,0 +1,37 @@
+# Example values for the AWS Load Balancer Controller.
+# Replace every placeholder before use. The IAM role must be created with an
+# IRSA trust policy for the controller's service account.
+
+clusterName: outbound-prod
+region: ap-southeast-1
+vpcId: vpc-0123456789abcdef0
+
+replicaCount: 2
+
+serviceAccount:
+  create: true
+  name: aws-load-balancer-controller
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::123456789012:role/aws-load-balancer-controller
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 500m
+    memory: 512Mi
+
+podDisruptionBudget:
+  maxUnavailable: 1
+
+topologySpreadConstraints:
+  - maxSkew: 1
+    topologyKey: topology.kubernetes.io/zone
+    whenUnsatisfiable: ScheduleAnyway
+    labelSelector:
+      matchLabels:
+        app.kubernetes.io/name: aws-load-balancer-controller
+
+nodeSelector:
+  kubernetes.io/os: linux

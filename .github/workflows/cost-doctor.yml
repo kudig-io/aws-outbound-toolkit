@@ -1,0 +1,46 @@
+name: cost-doctor CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/cost-doctor/**"
+      - ".github/workflows/cost-doctor.yml"
+  pull_request:
+    paths:
+      - "tools/cost-doctor/**"
+      - ".github/workflows/cost-doctor.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build and test
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tools/cost-doctor
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: tools/cost-doctor/go.mod
+          cache: false
+
+      - name: Check formatting
+        run: test -z "$(gofmt -l .)" || (gofmt -l . && exit 1)
+
+      - name: Vet
+        run: go vet ./...
+
+      - name: Test
+        run: go test -race ./...
+
+      - name: Build
+        run: go build ./cmd/aws-cost-doctor
+
+      - name: Smoke test
+        run: go run ./cmd/aws-cost-doctor scan --input examples/inventory.json --format json
